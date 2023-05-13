@@ -8,13 +8,13 @@
         <!-- font -->
         <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 
-        <link rel="stylesheet" href="../../public/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
         <div class="nav">
             <div class="nav-left">
-                <img src="../../public/assets/Group748.png" alt="top-left-logo">
+                <img src="assets/Group748.png" alt="top-left-logo">
             </div>
             <div class="nav-right">
                 <div><a class="nav-right-button" href="#">Home</a></div>
@@ -39,14 +39,14 @@
             <div class="background-fist-page"></div>
             <h1 class="welcome-to">Welcome to <span style="color:#EDB0B0">CardiCheck</span></h1>
             <h2 class="monitor-your">Monitor Your Heart, Achieve a Healthy Life</h2>
-            <img class="img-first" src="../../public/assets/Macbook Pro M1 2021.png" alt="">
+            <img class="img-first" src="assets/Macbook Pro M1 2021.png" alt="">
         </div>
         <div class="second-page">
-            <!-- <img class="second-bg-img" src="../../public/assets/second-bg.png" alt="background-img"> -->
+            <!-- <img class="second-bg-img" src="assets/second-bg.png" alt="background-img"> -->
             <div class="dot12"></div>
             <div class="dot13"></div>
             <div class="second-left">
-                <img class="img-second-left" src="../../public/assets/second-left.png" alt="laptop">
+                <img class="img-second-left" src="assets/second-left.png" alt="laptop">
             </div>
             <div class="second-right">
                 <h1 class="second-right-text">We help you for</h1>
