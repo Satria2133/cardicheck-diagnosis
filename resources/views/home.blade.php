@@ -42,7 +42,7 @@
             <img class="img-first" src="assets/Macbook Pro M1 2021.png" alt="">
         </div>
         <div class="second-page">
-            <!-- <img class="second-bg-img" src="assets/second-bg.png" alt="background-img"> -->
+            <img class="second-bg-img" src="assets/second-bg.png" alt="background-img">
             <div class="dot12"></div>
             <div class="dot13"></div>
             <div class="second-left">
@@ -54,7 +54,45 @@
                 <h1 class="second-right-text" style="color: #EDB0B0">and best heart</h1>
                 <h1 class="second-right-text" style="color: #EDB0B0">life</h1>
                 <!-- <a href="#" class="second-button">Try</a> -->
-                <button class="second-button">Try</button>
+                <!-- <button class="second-button">Try</button> -->
+                <div class="second-button-div">
+                    <a href="#third-page" class="second-button" role="button">Try</a>
+                </div>
+            </div>
+        </div>
+        <div id="third-page" class="third-page">
+            <div class="third-left">
+                <div class="third-logo">
+                    <img src="assets/ThirdLogo.png" alt="logo CardiCheck">
+                    <div class="third-logo-name" style="color: #424498">Cardio<span style="color:#EDB0B0">Check</span></div>
+                </div>
+                <div class="third-sentence">Check your heart condition! <br>Please fill in the data below.</div>
+                <div class="third-form">
+                    <form action="">
+                        <label class="forLabel" for="name">Name</label><br>
+                        <input type="text" id="name" name="name" placeholder="Name"><br>
+                        <label class="forLabel" for="age">Age</label><br>
+                        <input type="text" id="age" name="age" placeholder="Age"><br>
+                        <label class="forLabel" for="gender">Gender</label><br>
+                        <select name="gender" id="gender">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select><br>
+                        <label class="forLabel" for="height">Height</label><br>
+                        <input type="text" id="height" name="height" placeholder="Height"><br>
+                        <label class="forLabel" for="weight">Weight</label><br>
+                        <input type="text" id="Weight" name="Weight" placeholder="Height"><br>
+                        <label class="forLabel" for="tekananDarah">Tekanan Darah</label><br>
+                        <input type="text" id="tekananDarah" name="tekananDarah" placeholder="Tekanan Darah"><br>
+                        <label class="forLabel" for="kadarKolestrol">Kadar Kolestrol</label><br>
+                        <input type="text" id="kadarKolestrol" name="kadarKolestrol" placeholder="Kadar Kolestrol"><br>
+                        <input type="submit" value="Result">
+                    </form>
+                </div>
+            </div>
+            <div class="third-right">
+                <img class="third-right-img" src="assets/third-right.png" alt="doc-image">
+                <!-- <img class="third-bg" src="assets/third-bg.png" alt="background-img"> -->
             </div>
         </div>
     </body>

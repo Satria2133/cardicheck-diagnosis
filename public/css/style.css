@@ -215,7 +215,6 @@ li {
 
 .second-page {
     display: flex;
-    grid-row: auto;
     align-items: center;
     padding: 10.6vw 6vw;
     margin: 0 4vw;
@@ -241,7 +240,7 @@ li {
     text-align: right;
 }
 .second-button {
-    margin-top: 19px;
+    /* margin-top: 19px; */
     color: white;
     border: none;
     border-radius: 52px;
@@ -251,10 +250,10 @@ li {
     cursor: pointer;
     background: #424498;
 }
+.second-button-div {
+    margin-top: 22px;
+}
 .second-right-text {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: justify;
     color: #424498;
     margin: 23px 0 0 0;
     font-size: 4vw;
@@ -279,3 +278,84 @@ li {
     left: 32vw;
     background: #424498;
 }
+
+
+/* THIRD PAGE */
+.third-page {
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    /* padding: 10.6vw 6vw; */
+    padding: 3vw 6vw;
+    margin: 0 4vw;
+    margin-top: 2vh;
+    justify-content: center;
+    gap: 150px;
+}
+.third-right-img {
+    /* position: absolute; */
+    max-width: 100%;
+    height: auto;
+}
+/* .third-left {
+    border: 1px solid black;
+} */
+.third-logo {
+    display: flex;
+    align-items: center;
+}
+.third-logo-name {
+    font-size: 16px;
+    font-weight: 700;
+}
+.third-sentence {
+    color: #2F3373;
+    margin-top: 30px;
+    font-size: 33px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.third-form {
+    margin-left: 14px;
+}
+.forLabel {
+    color: #798A96;
+    font-weight: 500;
+    font-size: 16px;
+}
+input[type=text], select{
+    background-color: #F6F7F8;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 10px;
+    width: 94.2%;
+    margin: 15px 0;
+    font-size: 16px;
+}
+select {
+    width: 100%;
+}
+input[type=submit] {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #424498;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 0;
+    margin-top: 26px;
+}
+::placeholder {
+    color: #CACBD2;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: #CACBD2;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+color: #CACBD2;
+}
+/* .third-right {
+    border: 2px solid black;
+} */
