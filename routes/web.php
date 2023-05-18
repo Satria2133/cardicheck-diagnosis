@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DiagnosticController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,6 @@ Route::get('/', function () {
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
+Route::get('/diagnostic', [DiagnosticController::class,'showInputDiagnosticForm'])->name('third-page');
+Route::post('/countDiagnostic', [DiagnosticController::class,'countDiagnosticUsingFraminghamAlgorithm'])->name('countDiagnostic');

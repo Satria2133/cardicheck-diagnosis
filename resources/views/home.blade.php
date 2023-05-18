@@ -56,7 +56,7 @@
                 <!-- <a href="#" class="second-button">Try</a> -->
                 <!-- <button class="second-button">Try</button> -->
                 <div class="second-button-div">
-                    <a href="#third-page" class="second-button" role="button">Try</a>
+                    <a href="{{ route('third-page') }}" class="second-button" role="button">Try</a>
                 </div>
             </div>
         </div>
@@ -68,7 +68,8 @@
                 </div>
                 <div class="third-sentence">Check your heart condition! <br>Please fill in the data below.</div>
                 <div class="third-form">
-                    <form action="">
+                    <form action="{{ route('countDiagnostic') }}" method="POST">
+                        @csrf
                         <label class="forLabel" for="name">Name</label><br>
                         <input type="text" id="name" name="name" placeholder="Name"><br>
                         <label class="forLabel" for="age">Age</label><br>
@@ -78,14 +79,17 @@
                             <option value="Female">Female</option>
                             <option value="Male">Male</option>
                         </select><br>
-                        <label class="forLabel" for="height">Height</label><br>
-                        <input type="text" id="height" name="height" placeholder="Height"><br>
-                        <label class="forLabel" for="weight">Weight</label><br>
-                        <input type="text" id="Weight" name="Weight" placeholder="Height"><br>
-                        <label class="forLabel" for="tekananDarah">Tekanan Darah</label><br>
-                        <input type="text" id="tekananDarah" name="tekananDarah" placeholder="Tekanan Darah"><br>
-                        <label class="forLabel" for="kadarKolestrol">Kadar Kolestrol</label><br>
-                        <input type="text" id="kadarKolestrol" name="kadarKolestrol" placeholder="Kadar Kolestrol"><br>
+                        <label class="forLabel" for="smoker">Smoker</label><br>
+                        <select name="smoker" id="smoker">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select><br>
+                        <label class="forLabel" for="hdlCholesterol">HDL Cholesterol</label><br>
+                        <input type="text" id="hdlCholesterol" name="hdlCholesterol" placeholder="HDL Cholesterol"><br>
+                        <label class="forLabel" for="bloodPressure">Blood Pressure</label><br>
+                        <input type="text" id="bloodPressure" name="bloodPressure" placeholder="Blood Pressure"><br>
+                        <label class="forLabel" for="totalCholesterol">Total Cholesterol</label><br>
+                        <input type="text" id="totalCholesterol" name="totalCholesterol" placeholder="Total Cholesterol"><br>
                         <input type="submit" value="Result">
                     </form>
                 </div>
